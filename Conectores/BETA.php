@@ -14,9 +14,9 @@ define('__SYSTEM_URL', 'http://localhost/FramePHP-Simples/public/');
 // 			FTP
 // ###################################
 
-define('FTP_HOST','renanporto.com.br');
-define('FTP_USER','renan329');
-define('FTP_PASS','1PB;GVPgZIe(C(?<c-V/');
+define('FTP_HOST','ftphost');
+define('FTP_USER','user');
+define('FTP_PASS','pass');
 define('FTP_DIR_DEFAULT','files/projetoPhp/');
 define('__UPLOAD_MAX_SIZE_MB', 15);
 define('__UPLOAD_MIN_SIZE_MB', 0);
