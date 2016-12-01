@@ -2,8 +2,6 @@
 
 namespace FRAME\system;
 
-header('Content-Type: text/html; charset=UTF-8');
-
 class DataBase
 {
     protected $DB;

@@ -1,4 +1,4 @@
-{include file="../topo2.tpl"}
+{include file="../topo.tpl"}
 <div id="elemento">
 </div>
 <script>

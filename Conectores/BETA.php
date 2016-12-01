@@ -11,13 +11,24 @@ define('__FRAME_DIR', __APP_DIR . 'Frame/');;
 define('__SYSTEM_URL', 'http://localhost/FramePHP-Simples/public/');
 
 // ###################################
+// 			FTP
+// ###################################
+
+define('FTP_HOST','renanporto.com.br');
+define('FTP_USER','renan329');
+define('FTP_PASS','1PB;GVPgZIe(C(?<c-V/');
+define('FTP_DIR_DEFAULT','files/projetoPhp/');
+define('__UPLOAD_MAX_SIZE_MB', 15);
+define('__UPLOAD_MIN_SIZE_MB', 0);
+
+// ###################################
 // 			DATABASE
 // ###################################
 
 define('__HOST','127.0.0.1');
 define('__USER','root');
-define('__PASS','root');
-define('__BDNAME','bancoExample');
+define('__PASS','');
+define('__BDNAME','projetoPhp');
 
 // ###################################
 // 			DIRETÓRIO BIBLIOTECA
