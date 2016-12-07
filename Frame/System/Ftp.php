@@ -22,7 +22,7 @@ class Ftp
     		$this->uploadFileToServer();
     	}
     	catch(\Exception $e){
-	       throw new \Exception($e);
+	       throw new \Exception($e->getMessage());
     	}
     }
 
@@ -38,12 +38,24 @@ class Ftp
 
     private function setVariablesFile()
     {
-    	$this->fileName = $this->file['name'];
-        $this->fileType = $this->file['type'];
-    	$this->fileSize = $this->file['size'];
-    	$this->fileDir = $this->file['tmp_name'];
-    	$this->fileError = $this->file['error'];
-    }
+        if ( $this->file )
+        {
+            $this->fileName = $this->file['name'];
+            $this->fileType = $this->file['type'];
+            $this->fileSize = $this->file['size'];
+            $this->fileDir = $this->file['tmp_name'];
+            $this->fileError = $this->file['error'];
+
+            if ( empty($this->fileName) )
+            {
+                throw new \Exception('Algum problema ocorreu! ##fileName');
+            }
+        }
+        else
+        {
+            throw new \Exception('Nenhum arquivo importado!');
+        }
+	}
 
     private function uploadFileToServer()
     {
@@ -53,7 +65,7 @@ class Ftp
         $login_result = ftp_login($conn_id, FTP_USER, FTP_PASS);
 
         if (! ftp_put($conn_id, FTP_DIR_DEFAULT . $this->fileName, $this->fileDir, FTP_ASCII)) {
-        		throw new \Exception('Algum problema ocorreu ao tentar efetuar o upload!');
+        		throw new \Exception('Algum problema ocorreu ao tentar efetuar o upload! ##ftpConnect');
         }
     }
 }

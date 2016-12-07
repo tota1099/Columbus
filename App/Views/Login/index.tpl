@@ -1,4 +1,6 @@
 {include file="../topo.tpl"}
+{include file="../menu.tpl"}
+
 <div id="elemento">
 </div>
 <script>

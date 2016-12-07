@@ -36,7 +36,11 @@ define('__DBPORT', 3366);
 // ###################################
 
 define('LIBRARY_VENDOR', __FRAME_DIR . 'Library/');
+define('URL_JS','http://localhost/FramePHP-Simples/Assets/js');
+define('URL_CSS','http://localhost/FramePHP-Simples/Assets/css');
 define('URL_ASSETS_EXTERNO','http://localhost/FramePHP-Simples/Assets/externos/');
 define('URL_JS_EXTERNO',URL_ASSETS_EXTERNO . 'js');
 define('URL_CSS_EXTERNO',URL_ASSETS_EXTERNO . 'css');
 define('URL_LIBRARY_EXTERNO',URL_ASSETS_EXTERNO . 'library');
+
+ini_set('display_errors', 0);
