@@ -6,7 +6,7 @@
 
 define("__SYSTEM_ROOT_NAME","BETA");
 define("__SYSTEM_NAME","FramePHP - Simples");
-define('__APP_DIR', 'C:/xampp/htdocs/FramePHP-Simples/');
+define('__APP_DIR', '/var/www/html/FramePHP-Simples/');
 define('__FRAME_DIR', __APP_DIR . 'Frame/');;
 define('__SYSTEM_URL', 'http://localhost/FramePHP-Simples/public/');
 
@@ -27,8 +27,9 @@ define('__UPLOAD_MIN_SIZE_MB', 0);
 
 define('__HOST','127.0.0.1');
 define('__USER','root');
-define('__PASS','');
+define('__PASS','root');
 define('__BDNAME','projetoPhp');
+define('__DBPORT', 3366);
 
 // ###################################
 // 			DIRETÓRIO BIBLIOTECA

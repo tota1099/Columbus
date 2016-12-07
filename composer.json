@@ -1,8 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "App\\": "App\\",
-      "Frame\\" : "FRAME\\"
+      "App\\": "App/",
+      "Frame\\" : "Frame/"
     }
   }
 }

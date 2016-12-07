@@ -14,7 +14,7 @@ class DataBase
     protected function getDB()
     {
         try {
-            $DB = new \PDO('mysql:host=' . __HOST . ';dbname=' . __BDNAME . ';charset=utf8', __USER , __PASS );
+            $DB = new \PDO('mysql:host=' . __HOST . '; port=' . (__DBPORT > 0 ? __DBPORT : 3306) .';dbname=' . __BDNAME . ';charset=utf8', __USER , __PASS );
 
             $DB->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             date_default_timezone_set("Brazil/East");

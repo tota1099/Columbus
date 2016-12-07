@@ -23,7 +23,7 @@ class Init
 
         if ( array_key_exists(0, $url) )
         {
-            $class = "App\Controllers\\".ucfirst($url[0]);
+            $class = "App\\Controllers\\".ucfirst($url[0]);
             unset($url[0]);
         }
 
@@ -35,7 +35,7 @@ class Init
 
         if ( empty($class) )
         {
-            $class = "App\Controllers\\".ucfirst($this->controllerDefault);
+            $class = "App\\Controllers\\".ucfirst($this->controllerDefault);
         }
 
         if ( class_exists($class) === false)

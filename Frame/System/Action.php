@@ -20,7 +20,7 @@ class Action
             $function = new \ReflectionClass(get_class($this));
             $this->add('className', $function->getShortName());
             $this->add('methodName', $this->routeVars[0]);
-            $this->render('Index');
+            $this->render('index');
         }
         else
         {
@@ -44,7 +44,7 @@ class Action
     public function config_smarty()
     {
         $atual = get_class($this);
-        $singleClassName = strtolower(str_replace('App\\Controllers','',$atual));
+        $singleClassName = str_replace('App\\Controllers','',$atual);
         $this->template->template_dir = __APP_DIR . 'App/Views/'.$singleClassName.'';
         $this->template->compile_dir = LIBRARY_VENDOR . 'Smarty/Compilados/'.$singleClassName.'';
     }
