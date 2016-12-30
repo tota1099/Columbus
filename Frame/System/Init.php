@@ -5,8 +5,9 @@ namespace Frame\System;
 class Init
 {
     private $routes;
-    private $controllerDefault = 'Login';
-    private $methodDefault = 'listarEmpresas';
+    private $controllerDefault = __CONTROLLER_DEFAULT;
+    private $methodDefault = __METHOD_DEFAULT;
+    private $routeVarsDefault = __ROUTEVARS_DEFAULT;
 
     public function __construct()
     {
@@ -43,10 +44,9 @@ class Init
             die('Algum erro aconteceu!! Contacte o administrador. #errorControl');
         }
 
-        if ( empty($method) )
+            if ( empty($method) )
         {
-            $method = 'index';
-            $routeVars[] = $this->methodDefault;
+            $method = $this->methodDefault;
         }
 
         if ( array_key_exists(2, $url) )
@@ -55,6 +55,10 @@ class Init
             {
                 $routeVars[] = $val;
             }
+        }
+        else if ( !empty($this->routeVarsDefault) )
+        {
+            $routeVars = $this->routeVarsDefault;
         }
 
         $controller = new $class($routeVars);

@@ -4,5 +4,8 @@
       "App\\": "App/",
       "Frame\\" : "Frame/"
     }
+  },
+  "require": {
+    "phpmailer/phpmailer": "^5.2"
   }
 }
