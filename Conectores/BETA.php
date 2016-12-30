@@ -28,7 +28,7 @@ define('__UPLOAD_MIN_SIZE_MB', 0);
 
 define('__CONTROLLER_DEFAULT','Site');
 define('__METHOD_DEFAULT','index');
-define('__ROUTEVARS_DEFAULT', array('home'));
+define('__ROUTEVARS_DEFAULT', 'home');
 
 // ###################################
 // 			DATABASE
@@ -62,5 +62,4 @@ define('URL_JS_EXTERNO',URL_ASSETS_EXTERNO . 'js');
 define('URL_CSS_EXTERNO',URL_ASSETS_EXTERNO . 'css');
 define('URL_LIBRARY_EXTERNO',URL_ASSETS_EXTERNO . 'library');
 
-ini_set('display_errors', 0);
-header('Content-Type: text/html; charset=utf-8');
+ini_set('display_errors', 1);

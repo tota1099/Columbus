@@ -15,13 +15,11 @@ class EMail extends Action
     public function sendMail()
     {
         try{
-            $subject = 'Email: ' . $_POST['nome'] . '<br>' .
-                'Nome:' . $_POST['adress'] . '<br>' .
-                $subject;
-
-            $body = $_POST['body'];
+            $body = 'Email: ' . $_POST['email'] . '<br>' .
+                'Nome:' . $_POST['nome'] . '<br>'.
+                $_POST['body'];
             $Mail = new Mail();
-            $Mail->sendMail('contato@renanporto.com.br', $subject, $body);
+            $Mail->sendMail('contato@renanporto.com.br', 'Email de Contato', $body);
         }
         catch (Exception $e)
         {
