@@ -58,7 +58,11 @@ class Init
         }
         else if ( !empty($this->routeVarsDefault) )
         {
-            $routeVars = $this->routeVarsDefault;
+            $routerVarsArray = explode('/', $this->routeVarsDefault);
+            foreach($routerVarsArray as $val)
+            {
+                $routeVars[] = $val;
+            }
         }
 
         $controller = new $class($routeVars);
