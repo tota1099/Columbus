@@ -1,5 +1,2 @@
 /vendor
 .idea
-public/error_log
-composer.lock
-Frame/Library/Smarty/Compilados/
