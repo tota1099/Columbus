@@ -1,0 +1,14 @@
+app:
+  restart: 'yes'
+  image: php:7
+  command: php -S 0.0.0.0:8000 /app/public/index.php
+  ports:
+    - "8000:8000"
+  volumes:
+    - .:/app
+
+composer:
+    image: composer/composer
+    command: install
+    volumes: 
+     - .:/app
