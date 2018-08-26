@@ -5,9 +5,9 @@
 // ###################################
 
 define("__SYSTEM_ROOT_NAME","BETA");
-define("__SYSTEM_NAME","FramePHP - Simples");
-define('__FRAME_DIR', __APP_DIR . 'Frame/');;
-define('__SYSTEM_URL', 'http://localhost/FramePHP-Simples/public/');
+define("__SYSTEM_NAME","Colombus");
+define('__FRAME_DIR', __APP_DIR . '/Frame/');;
+define('__SYSTEM_URL', 'http://localhost/');
 
 // ###################################
 // 	FTP
@@ -45,15 +45,15 @@ define('__DBPORT', 3306);
 define('__SMTP_EMAIL','contato@seusite.com.br');
 define('__SMTP_NOME','Sistema Email');
 define('__SMTP_USER','contato@seusite.com.br');
-define('__SMTP_PASS','SMPT_Password');
-define('__SMTP_SERVER','SMPT_SERVER');
+define('__SMTP_PASS','SMTP_Password');
+define('__SMTP_SERVER','SMTP_SERVER');
 
 // ###################################
 // 	ASSETS
 // ###################################
 
-define('LIBRARY_VENDOR', __FRAME_DIR . 'Library/');
-define('URL_ASSETS', __APP_DIR .'Assets/');
+define('URL_ASSETS', __SYSTEM_URL .'Assets/');
 define('URL_JS',URL_ASSETS . 'js');
+define('URL_ASSETS_EXTERNO', URL_ASSETS . 'externos/');
 define('URL_CSS',URL_ASSETS . 'css');
 define('URL_IMG',URL_ASSETS. 'img');

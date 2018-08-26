@@ -30,8 +30,6 @@ class Action
 
     private function runSmarty()
     {
-        // Instância o Smarty
-        require_once LIBRARY_VENDOR . 'Smarty/libs/Smarty.class.php';
         $this->template = new \Smarty;
         $this->config_smarty();
     }
@@ -45,8 +43,8 @@ class Action
     {
         $atual = get_class($this);
         $singleClassName = str_replace('App\\Controllers','',$atual);
-        $this->template->template_dir = __APP_DIR . 'App/Views/'.$singleClassName.'';
-        $this->template->compile_dir = LIBRARY_VENDOR . 'Smarty/Compilados/'.$singleClassName.'';
+        $this->template->template_dir = __APP_DIR . '/App/Views/'.$singleClassName;
+        $this->template->compile_dir = __APP_DIR . '/SmartyCompilados/'.$singleClassName;
     }
 
     public function add($add,$value)

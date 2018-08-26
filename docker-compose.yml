@@ -1,14 +1,31 @@
-app:
-  restart: 'yes'
-  image: php:7
-  command: php -S 0.0.0.0:8000 /app/public/index.php
-  ports:
-    - "8000:8000"
-  volumes:
-    - .:/app
+version: "3"
 
-composer:
-    image: composer/composer
-    command: install
-    volumes: 
-     - .:/app
+services:
+  app:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./:/var/www/html
+      - ./docker/php/php.ini:/etc/php-7.0.d/php.ini
+      - ./docker/httpd/httpd.conf:/etc/httpd/conf.d/httpd.conf
+      - ./logs:/var/log/httpd
+    links:
+      - database
+
+  database:
+    image: mysql:5.6
+    ports:
+      - 3306:3306
+    volumes:
+      - ./docker/database/:/etc/mysql/conf.d
+      - ./docker/database-storage:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+
+  composer:
+      image: composer/composer
+      command: install
+      volumes: 
+      - .:/app

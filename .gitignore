@@ -3,3 +3,6 @@
 public/error_log
 composer.lock
 Frame/Library/Smarty/Compilados/
+SmartyCompilados
+logs/
+docker/database-storage/

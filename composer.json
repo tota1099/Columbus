@@ -7,6 +7,6 @@
   },
   "require": {
     "phpmailer/phpmailer": "^5.2",
-    "league/oauth2-google": "^2.0.1"
+    "smarty/smarty": "~3.1"
   }
 }
