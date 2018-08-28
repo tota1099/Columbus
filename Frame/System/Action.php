@@ -15,15 +15,12 @@ class Action
 
     public function index()
     {
-        if ( array_key_exists(0, $this->routeVars) )
-        {
+        if ( array_key_exists(0, $this->routeVars) ) {
             $function = new \ReflectionClass(get_class($this));
             $this->add('className', $function->getShortName());
             $this->add('methodName', $this->routeVars[0]);
             $this->render('index');
-        }
-        else
-        {
+        } else {
             die('Algum erro aconteceu!! Contacte o administrador. #errorMethodIndex');
         }
     }
@@ -49,8 +46,7 @@ class Action
 
     public function add($add,$value)
     {
-        if ( $add != '' && $value != '' )
-        {
+        if ( $add != '' && $value != '' ) {
             $this->template->assign($add,$value);
         }
     }

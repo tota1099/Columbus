@@ -29,30 +29,26 @@ class Ftp
     private function checkSize()
     {
     	if($this->uploadMaxSizeMB > 0 && $this->fileSize > ($this->uploadMaxSizeMB * 1024 * 1000)) {
-                throw new \Exception('Tamanho máximo de upload excedido! Tamanho máximo: '.$this->uploadMaxSizeMB.'MB.');
+            throw new \Exception('Tamanho máximo de upload excedido! Tamanho máximo: '.$this->uploadMaxSizeMB.'MB.');
         }
         if($this->uploadMinSizeMB > 0 && $this->fileSize < ($this->uploadMinSizeMB * 1024 * 1000)) {
-                throw new \Exception('Arquivo pequeno. Tamanho mínimo: '.$this->uploadMinSizeMB.'MB.');     
+            throw new \Exception('Arquivo pequeno. Tamanho mínimo: '.$this->uploadMinSizeMB.'MB.');     
         }  
     }
 
     private function setVariablesFile()
     {
-        if ( $this->file )
-        {
+        if ( $this->file ) {
             $this->fileName = $this->file['name'];
             $this->fileType = $this->file['type'];
             $this->fileSize = $this->file['size'];
             $this->fileDir = $this->file['tmp_name'];
             $this->fileError = $this->file['error'];
 
-            if ( empty($this->fileName) )
-            {
+            if ( empty($this->fileName) ) {
                 throw new \Exception('Algum problema ocorreu! ##fileName');
             }
-        }
-        else
-        {
+        } else {
             throw new \Exception('Nenhum arquivo importado!');
         }
 	}

@@ -57,15 +57,12 @@ class Mail
         $mail->From = __SMTP_EMAIL;
         $mail->FromName = __SMTP_NOME;
 
-        if ( is_array($adress) )
-        {
-            foreach( $adress as $email )
-            {
+        if ( is_array($adress) ) {
+            foreach( $adress as $email ) {
                 $mail->AddAddress($email['email'], $email['nome']);
             }
         }
-        else
-        {
+        else {
             $mail->AddAddress($adress);
         }
 

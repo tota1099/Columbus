@@ -28,19 +28,19 @@
                         Renan de Medeiros Porto
                     </h4>
                     <div>
-                        Atualmente no cargo desenvolvedor web junior, 19 anos, iniciou sua carreira na área de tecnológia como suporte ao cliente.
+                        Atualmente no cargo desenvolvedor web junior, 20 anos, iniciou sua carreira na área de tecnológia como suporte ao cliente.
                         Trabalhou efetuando documentações de sistemas e auxiliando usuários a utilizá-lo. Também executou
                         a função de tester, efetuando testes em recursos novos. Obteve a oportunidade de entrar na área
                         de programação e agarrou-a, conseguindo entrar em um projeto de gerenciamento de congressos, gerenciado
                         por uma empresa canadense. Com o passar do tempo, foi inserido em outro projeto paralelo de um sistema
                         de gerenciamento de financeiras, especializado em empréstimo consignado. Efetua a gestão do projeto referente
-                        ao congresso, cuidando de servidores, bancos de dados e suporte técnico e ao cliente.
+                        ao congresso, cuidando de servidores, bancos de dados e suporte técnico.
                     </div>
                     <Br>
                     <div>
-                        <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 25px; color:#2e6da4"></span> <strong>Curso Básico de Suporte e Manutenção de Computadores - Serviço Nacional de Aprendizagem Industrial <small>[ 2012-2012 ]</small></strong><br>
-                        <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 25px; color:#2e6da4"></span> <strong>Curso Básico de Programação Web- Serviço Nacional de Aprendizagem Industrial<small>[ 2013 - 2013 ]</small></strong><br>
-                        <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 25px; color:#2e6da4"></span> <strong>Sistemas de Informação - Universidade do Sul de Santa Catarina <small>[ Incompleto - 5º Semestre ]</small></strong>
+                        <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 25px; color:#2e6da4"></span> <strong>Curso Básico de Suporte e Manutenção de Computadores - Serviço Nacional de Aprendizagem Industrial <small>[2012]</small></strong><br>
+                        <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 25px; color:#2e6da4"></span> <strong>Curso Básico de Programação Web- Serviço Nacional de Aprendizagem Industrial <small>[2013]</small></strong><br>
+                        <span class="glyphicon glyphicon-education" aria-hidden="true" style="font-size: 25px; color:#2e6da4"></span> <strong>Sistemas de Informação - Universidade do Sul de Santa Catarina <small>[Incompleto - 8º Semestre]</small></strong>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@
         <div class="row bg-primary paddingFooter text-center">
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="copyright">
-                    © 2017, Renan Porto, All rights reserved
+                    © 2018, Renan Porto, All rights reserved
                 </div>
             </div>
         </div>

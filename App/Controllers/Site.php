@@ -15,9 +15,4 @@ class Site extends Action
     {
         $this->template->display('home.tpl');
     }
-
-    public function boostrap()
-    {
-        $this->template->display('boostrap.tpl');
-    }
 }

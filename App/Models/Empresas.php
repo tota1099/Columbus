@@ -4,17 +4,12 @@ namespace App\Models;
 
 use Frame\System\DataBase;
 
-class Empresas extends DataBase
+class Example extends DataBase
 {
-    public function retornar()
+    public function getAllUsers()
     {
-        $sql =  "SELECT * FROM usuarios";
-
-        return array(
-            array('ep_nome_empresa' => 'Renan Porto'),
-            array('ep_nome_empresa' => 'Raiza Porto'),
-            array('ep_nome_empresa' => 'Teste'),
-        );
+        $sql =  "SELECT * FROM users";
+        return $this->fetchAll($sql);
     }
 
 }

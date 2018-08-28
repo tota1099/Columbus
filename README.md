@@ -7,4 +7,10 @@ Uma aplicação simples utilizando a estrutura MVC e a linguagem de programaçã
 - Composer (Gestão de Dependências)
 
 
-[... Em construção ...]
+### Installing and running ###
+
+`$ docker-compose build --no-cache`
+
+`$ docker-compose up -d`
+
+**Open your browser in the address "http://localhost" and enjoy the application**
