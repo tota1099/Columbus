@@ -22,8 +22,8 @@ services:
       - ./docker/database/:/etc/mysql/conf.d
       - ./docker/database-storage:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: "root"
       MYSQL_DATABASE: "columbus"
+      MYSQL_ROOT_PASSWORD: "root"
 
   composer:
       image: composer/composer
