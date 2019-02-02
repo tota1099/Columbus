@@ -13,6 +13,11 @@ class Site extends Action
 
     public function home()
     {
+        $this->template->assign('userName', 'Columbus');
         $this->template->display('home.tpl');
+    }
+
+    public function teste(){
+        echo 'OK!';
     }
 }

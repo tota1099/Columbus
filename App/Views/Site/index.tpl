@@ -1,10 +1,17 @@
-{include file="../topo.tpl"}
-{include file="../menu.tpl"}
+<body>
 
-<main>
-    <div id="systemContentDiv">
-    </div>
-</main>
+{include file="../top.tpl"}
+
+    <main>
+        <div id="systemContentDiv">
+        </div>
+    </main>
+
+{include file="../footer.tpl"}
+
+</body>
+
+
 <script>
 
 $.ajax({
