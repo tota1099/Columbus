@@ -2,8 +2,8 @@
 
 {include file="../top.tpl"}
 
-    <main>
-        <div id="systemContentDiv">
+    <main class="bg-light">
+        <div id="systemContentDiv" class="container">
         </div>
     </main>
 
