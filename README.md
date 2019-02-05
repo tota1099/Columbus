@@ -1,10 +1,11 @@
 # Columbus
-Uma aplicação simples utilizando a estrutura MVC e a linguagem de programação PHP.
 
-- Composer
+A Framework that i had created just to learn more about PHP and Software infrastructure
+
+- PHP
 - Smarty Template Engine
-- PHP/Apache and MYSQL
-- Composer (Gestão de Dependências)
+- MYSQL
+- Composer
 
 
 ### Installing and running ###
