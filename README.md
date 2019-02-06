@@ -13,4 +13,8 @@ Uma aplicação simples utilizando a estrutura MVC e a linguagem de programaçã
 
 `$ docker-compose up -d`
 
+### Database Migration ###
+
+`$ docker-compose exec app ./vendor/bin/phinx migrate`
+
 **Open your browser in the address "http://localhost" and enjoy the application**

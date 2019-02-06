@@ -35,4 +35,10 @@ class DataBase
         }
         return $retorno;
     }
+
+    public function fetchColumn($SQL)
+    {
+        $consulta = $this->DB->query($SQL);
+        return $consulta->fetchColumn();
+    }
 }

@@ -5,7 +5,7 @@
 // ###################################
 
 define("__SYSTEM_ROOT_NAME","BETA");
-define("__SYSTEM_NAME","Colombus");
+define("__SYSTEM_NAME","Columbus");
 define('__FRAME_DIR', __APP_DIR . '/Frame/');;
 define('__SYSTEM_URL', 'http://localhost/');
 
@@ -33,10 +33,10 @@ define('__ROUTEVARS_DEFAULT', 'home');
 // 	DATABASE
 // ###################################
 
-define('__HOST','127.0.0.1');
+define('__HOST','database');
 define('__USER','root');
-define('__PASS','');
-define('__BDNAME','projetoPhp');
+define('__PASS','root');
+define('__BDNAME','columbus');
 define('__DBPORT', 3306);
 
 // ###################################
